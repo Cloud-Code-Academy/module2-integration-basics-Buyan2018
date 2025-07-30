@@ -17,7 +17,6 @@
  */
 public with sharing class DummyJSONCalloutMockGenerator implements HttpCalloutMock {
 	public static String DUMMY_JSON_USER_PAYLOAD = '{"id": 1, "firstName":"Johnny", "lastName":"Test", "email": "test@example.com", "phone": "+123456789", "birthDate": "1990-01-01", "address": {"address": "123 Test St", "city": "Test City", "postalCode": "12345", "state": "TS", "country": "Testland"}}';
-
 	public HTTPResponse respond(HTTPRequest req) {
 		// Create a fake response
 		HttpResponse res = new HttpResponse();
